@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- Bootstrap CDN link -->
+  <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+
+  <!-- Custom Css link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="./../firebase-config.js" type="module"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 fw-bold py-2 fs-3 text-primary">TODO APPLICATION</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sign Up -->
+  <section class="wrapper mt-4">
+    <div class="container">
+      <form action="javascript:void(0)" class="rounded bg-white shadow p-5" autocomplete="off">
+        <h3 class="fw-bolder fs-3 mb-3 text-primary text-center">SIGN UP</h3>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control nameElement" id="floatingInputName" placeholder="name@example.com">
+          <label for="floatingInputName">Name</label>
+        </div>
+        <p class="error" id="name-error"></p>
+
+        <p class="fill"></p>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control element-1" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <p class="error" id="fir-error"></p>
+
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control element-2" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <p class="error" id="sec-error"></p>
+
+        <div class="form-floating">
+          <input type="password" class="form-control element-3" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Confirm-Password</label>
+        </div>
+        <p class="error" id="thi-error"></p>
+
+        <div class="form-floating">
+          <input type="number" class="form-control element-4" id="number" placeholder="Password">
+          <label for="number">Phone Number:</label>
+        </div>
+        <p class="error" id="four-error"></p>
+
+        <div class="mb-3">
+          <input class="form-control form-control-lg element-5" id="formFileLg" type="file">
+        </div>
+        <p class="error" id="five-error"></p>
+
+        <button class="btn btn-primary w-100 submit my-2" id="submit-data">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- custom javascript -->
+  <script src="signup.js" type="module"></script>
+</body>
+
+</html>

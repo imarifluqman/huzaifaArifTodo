@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+
+    <!-- Bootstrap CDN link -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+
+    <!-- Custom Css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="./firebase-config.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 fw-bold py-2 fs-3 text-primary">Todo Application</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <section class="wrapper mt-4">
+        <div class="container">
+            <form action="javascript:void(0)" class="rounded bg-white shadow p-5">
+                <h3 class="text-dark fw-bolder fs-4 mb-2 text-center">LOGIN IN</h3>
+                <div class="fw-normal text-muted mb-4 text-center">
+                    New Here? <a href="#" class="text-primary fw-bold text-decoration-none account" id="new-account">Create
+                        an account</a>
+                </div>
+                
+                <p class="fill"></p>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control loginEmailEl1" id="floatingInput"
+                        placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <p class="loginError-1"></p>
+                <div class="form-floating">
+                    <input type="password" class="form-control loginEmailEl2" id="floatingPassword"
+                        placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <p class="loginError-2"></p>
+                <div class="mt-2 text-end">
+                    <a href="#" class="fw-bold text-primary text-decoration-none" id="forget">Forgot Password?</a>
+                </div>
+                <p class="main-error"></p>
+                <button type="submit" class="btn btn-primary submit w-100 my-4" id="login">Continue</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- custom javascript -->
+    <script src="app.js" type="module"></script>
+
+</body>
+
+</html>

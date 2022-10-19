@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- Bootstrap CDN link -->
+  <link rel="stylesheet" href="../../Bootstrap/bootstrap.css">
+
+  <!-- Custom Css link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="../../firebase-config.js" type="module"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 fw-bold py-2 fs-3 text-primary">TODO APPLICATION</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sign Up -->
+  <section class="wrapper pt-5">
+    <div class="container mt-5">
+      <form action="javascript:void(0)" class="rounded bg-white shadow p-5" autocomplete="off">
+        <h3 class="fw-bolder fs-3 mb-3 text-primary text-center">PASSWORD RECOVERY</h3>
+
+        <p class="error"></p>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control element-1" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <button class="btn btn-primary w-100 submit my-2" id="submit-data">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- custom javascript -->
+  <script src="forget.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Bootstrap CDN link -->
+    <link rel="stylesheet" href="../../../../Bootstrap/bootstrap.css">
+
+    <!-- Custom Css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="../../../../firebase-config.js" type="module"></script>
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 fw-bold py-2 fs-3 text-primary logo">TODO APPLICATION</span>
+                <span class="navbar-brand mb-0 h1"><img src="images/logout.png" alt="logout" title="Logout"
+                        class="img-fluid logout"></span>
+            </div>
+            <img width="50px" height="50px" id="dpImage" src="" alt="logout" title="Logout"
+                class="img-fluid logout">
+        </nav>
+    </header>
+
+
+
+    <!-- Data Entry -->
+    <div class="wrapper mt-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-9 bground" id="text">
+                    <div class="form-floating">
+                        <textarea class="form-control todo" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Enter Your Todo</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 text-center bground" id="buttons">
+                    <div class="images">
+                        <img src="images/add.jpg" alt="add" id="add" class="img-fluid mx-3 add" onclick="addTodo()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Finsihing Message -->
+    <div class="message-of-task"></div>
+
+
+    <!-- Loader -->
+    <div class="container" id="hide">
+        <div class="row">
+            <div class="col">
+                <img src="images/loader.gif" alt="loader" id="loader">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- make listing of firebase data -->
+    <div class=" col-10 offset-1 col-xl-10 offset-xl-1 mt-2 list">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="main-list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- custom javascript -->
+    <script src="todo.js" type="module"></script>
+</body>
+
+</html>
